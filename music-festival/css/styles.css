@@ -1,0 +1,81 @@
+body {
+  background-color: #f3efe6;
+}
+
+p {
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+}
+.festival-title {
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #b3261e;
+  letter-spacing: 6px;
+}
+
+.navigation a {
+  text-transform: uppercase;
+  color: #1f3a5f;
+}
+.hero-title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.hero-text {
+  font-size: 22px;
+  text-align: center;
+}
+
+.ticket-link {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.section-title {
+  text-align: center;
+}
+
+.artist-name {
+  color: #7a3e9d;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.artist-description {
+  color: #6b6b6b;
+}
+
+.schedule-item {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 6px;
+}
+
+.highlight {
+  color: #b3261e;
+  text-transform: uppercase;
+}
+.info-text {
+  color: #2e4a3a;
+}
+
+.important {
+  color: #b3261e;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.footer-text {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-link {
+  color: #1f3a5f;
+  text-decoration: none;
+}
