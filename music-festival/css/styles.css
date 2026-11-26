@@ -1,6 +1,29 @@
+@font-face {
+  font-family: "Playfair Local";
+  src: url("../fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pacifico Local";
+  src: url("../fonts/Pacifico-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --color-primary: #b3261e;
+  --color-secondary: #1f3a5f;
+  --color-background: #f3efe6;
+  --color-surface: rgba(255, 255, 255, 0.7);
+  --color-text: rgb(51, 51, 51);
+  --color-muted: dimgray;
+}
 body {
-  background-color: #f3efe6;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  font-family: "Manrope", sans-serif;
 }
 
 p {
@@ -15,7 +38,7 @@ a {
   font-size: 48px;
   color: #b3261e;
   letter-spacing: 6px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Playfair Local", Georgia, serif;
   font-weight: 700;
 }
 
@@ -27,7 +50,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-family: "Roboto Slab", serif;
+  font-weight: 800;
 }
 
 .hero-text {
@@ -38,23 +61,22 @@ a {
 .ticket-link {
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "Brush Script MT", cursive;
+  font-family: "Pacifico Local", cursive;
 }
 .section-title {
   text-align: center;
-  font-family: "Roboto Slab", serif;
+  font-weight: 700;
 }
 
 .artist-name {
   color: #7a3e9d;
   font-size: 26px;
   text-transform: uppercase;
-  font-family: "Roboto Slab", serif;
+  font-weight: 600;
 }
 
 .artist-description {
   color: #6b6b6b;
-  font-family: Papyrus, fantasy;
   font-weight: 400;
 }
 
@@ -91,5 +113,70 @@ a {
   text-decoration: none;
 }
 .navigation {
-  font-family: Verdana, Tahoma, sans-serif;
+  font-weight: 500;
+}
+/* Part 4: apply CSS variables */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+p {
+  color: var(--color-text);
+}
+
+header {
+  background-color: var(--color-surface);
+}
+
+.navigation a {
+  color: var(--color-secondary);
+}
+
+.festival-title {
+  color: var(--color-primary);
+}
+
+.hero {
+  background-color: var(--color-surface);
+}
+
+.hero-title {
+  color: var(--color-primary, black);
+}
+
+.section-title {
+  color: var(--color-secondary);
+}
+
+.artist {
+  background-color: var(--color-surface);
+}
+
+.artist-name {
+  color: var(--color-secondary);
+}
+
+.artist-description {
+  color: var(--color-muted);
+}
+
+.ticket-link {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+footer {
+  background-color: var(--color-secondary);
+  color: var(--color-background);
+}
+
+.footer-text {
+  color: var(--color-background);
+}
+
+.footer-link {
+  color: var(--color-background);
 }
